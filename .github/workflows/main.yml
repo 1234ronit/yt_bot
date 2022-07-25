@@ -17,4 +17,5 @@ jobs:
         run: npm cache clean --force
       - name: Install dependencies and run tests
         run: |
+          npm i
           npx playwright test
