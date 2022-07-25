@@ -46,6 +46,19 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
+    {
+      name: "Google Chrome",
+      use: {
+        channel: "chrome",
+        launchOptions: {
+          args: [
+            "--use-fake-device-for-media-stream",
+            "--use-fake-ui-for-media-stream",
+            "--autoplay-policy=no-user-gesture-required",
+          ],
+        },
+      },
+    },
     // {
     //   name: 'chromium',
     //   use: {
@@ -60,12 +73,12 @@ const config = {
     //   },
     // },
 
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Safari'],
-      },
-    },
+//     {
+//       name: 'webkit',
+//       use: {
+//         ...devices['Desktop Safari'],
+//       },
+//     },
 
     /* Test against mobile viewports. */
     // {
