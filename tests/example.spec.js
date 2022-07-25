@@ -15,6 +15,7 @@ for (let i = 0; i < n; i++) {
       await page.click('//video[@class="video-stream html5-main-video"]');
       await sleep(1000);
     }
+  console.log(url);
   });
 };
 for (let i = 0; i < n; i++) {
@@ -25,5 +26,6 @@ for (let i = 0; i < n; i++) {
       await page.click('//video[@class="video-stream html5-main-video"]');
       await sleep(1000);
     }
+    console.log(url);
   });
 };
