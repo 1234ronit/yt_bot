@@ -5,7 +5,7 @@ const sleep = (milliseconds) => {
 const url1 = 'https://youtu.be/PtWg-f52VfU'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
-const n = 5;
+const n = 10;
 
 for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ page }) => {
