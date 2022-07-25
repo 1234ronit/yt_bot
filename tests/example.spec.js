@@ -11,12 +11,12 @@ for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ page }) => {
     await page.goto(url1);
     console.log(`Youtube1- ${i} `, url1);
-    await sleep(300*1000);
-    for (let i = 0; i < 10; i++) {
+    await sleep(150*1000);
+    for (let j = 0; j < 100; j++) {
       console.log(`Youtube1- ${i} `, "reload");
       page.reload();
 //       await page.click('//video[@class="video-stream html5-main-video"]');
-      await sleep(300*1000);
+      await sleep(150*1000);
     }
   });
 };
