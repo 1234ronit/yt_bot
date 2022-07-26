@@ -59,7 +59,7 @@ const config = {
 //         },
 //       },
 //     },
-    // {
+    {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
