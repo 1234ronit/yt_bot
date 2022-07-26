@@ -5,7 +5,7 @@ const sleep = (milliseconds) => {
 const url1 = 'https://youtu.be/rqBHt2E4Cls'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
-const n = 5;
+const n = 2;
 for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ context }) => {
     await sleep(10*1000);
@@ -19,7 +19,7 @@ for (let i = 0; i < n; i++) {
       await page.click("//span[contains(string(),'144p')]");
       console.log("quality changed");
 
-      await sleep(150*1000);
+      await sleep(300*1000);
       await page.close();
       console.log(`Youtube1- ${i} `, "closed");
     }
