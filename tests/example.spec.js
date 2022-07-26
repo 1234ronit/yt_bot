@@ -6,16 +6,14 @@ const url1 = 'https://youtu.be/PtWg-f52VfU'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
 const n = 5;
-
 for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ page }) => {
     await sleep(20*1000);
     await page.goto(url1);
     console.log(`Youtube1- ${i} `, url1);
-    await sleep(600*1000);
     for (let j = 0; j < 100; j++) {
-      console.log(`Youtube1- ${i} `, "reload");
       page.reload();
+      console.log(`Youtube1- ${i} `, "reload");
 //       await page.click('//video[@class="video-stream html5-main-video"]');
       await sleep(600*1000);
     }
