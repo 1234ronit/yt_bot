@@ -5,10 +5,10 @@ const sleep = (milliseconds) => {
 const url1 = 'https://youtu.be/rqBHt2E4Cls'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
-const n = 10;
+const n = 5;
 for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ context }) => {
-    await sleep(5*1000);
+    await sleep(10*1000);
     for (let j = 0; j < 100; j++) {
       let page = await context.newPage();
       await page.goto(url1);
