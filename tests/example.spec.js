@@ -5,7 +5,7 @@ const sleep = (milliseconds) => {
 const url1 = 'https://youtu.be/rqBHt2E4Cls'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
-const n = 2;
+const n = 3;
 for (let i = 0; i < n; i++) {
   test(`Youtube1- ${i} `, async ({ context }) => {
     await sleep(10*1000);
