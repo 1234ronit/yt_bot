@@ -2,8 +2,8 @@ const { test } = require('@playwright/test');
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
-const url1 = 'https://youtu.be/_iVnku1HlmI'
-const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
+const url1 = 'https://youtu.be/mc8TvbuT9Gw'
+// const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
 const n = 5;
 for (let i = 0; i < n; i++) {
