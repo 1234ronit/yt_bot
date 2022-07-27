@@ -2,7 +2,7 @@ const { test } = require('@playwright/test');
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
-const url1 = 'https://youtu.be/rqBHt2E4Cls'
+const url1 = 'https://youtu.be/_iVnku1HlmI'
 const url2 = 'https://www.youtube.com/watch?v=pI6G4F_tze0&t=1285s'
 
 const n = 5;
