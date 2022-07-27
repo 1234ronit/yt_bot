@@ -19,7 +19,11 @@ for (let i = 0; i < n; i++) {
       await page.click("//span[contains(string(),'144p')]");
       console.log("quality changed");
 
-      await sleep(600*1000);
+      for (let k = 0; k < 10; k++) {
+            await sleep(60*1000);
+            await page.click('//video[@class="video-stream html5-main-video"]');
+            await page.click('//video[@class="video-stream html5-main-video"]');
+      }
       await page.close();
       console.log(`Youtube1- ${i} `, "closed");
     }
