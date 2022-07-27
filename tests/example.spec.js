@@ -23,6 +23,7 @@ for (let i = 0; i < n; i++) {
             await sleep(60*1000);
             await page.click('//video[@class="video-stream html5-main-video"]');
             await page.click('//video[@class="video-stream html5-main-video"]');
+            console.log(`Youtube1- ${i} `, "play/pause");
       }
       await page.close();
       console.log(`Youtube1- ${i} `, "closed");
