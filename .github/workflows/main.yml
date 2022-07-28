@@ -1,11 +1,58 @@
-name: Web Automation Tests
+name: YT Tests
 
 on:
   workflow_dispatch
 
 jobs:
-  test:
-    timeout-minutes: 180
+  test1:
+    runs-on: macos-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3.4.1
+
+      - uses: microsoft/playwright-github-action@v1.5.1
+      - name: Clear Cache
+        run: npm cache clean --force
+      - name: Install dependencies and run tests
+        run: |
+          npm i
+          npx playwright install
+          npx playwright test
+
+  test2:
+    runs-on: macos-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3.4.1
+
+      - uses: microsoft/playwright-github-action@v1.5.1
+      - name: Clear Cache
+        run: npm cache clean --force
+      - name: Install dependencies and run tests
+        run: |
+          npm i
+          npx playwright install
+          npx playwright test
+
+  test3:
+    runs-on: macos-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3.4.1
+
+      - uses: microsoft/playwright-github-action@v1.5.1
+      - name: Clear Cache
+        run: npm cache clean --force
+      - name: Install dependencies and run tests
+        run: |
+          npm i
+          npx playwright install
+          npx playwright test
+          
+  test4:
     runs-on: macos-latest
     
     steps:
